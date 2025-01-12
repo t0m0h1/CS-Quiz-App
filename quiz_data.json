@@ -1,0 +1,46 @@
+{
+    "topics": [
+        "data structures",
+        "algorithms",
+        "web development",
+        "databases",
+        "networking",
+        "operating systems",
+        "software engineering",
+        "cybersecurity",
+        "machine learning",
+        "artificial intelligence"
+    ],
+    "questions_data_structures": [
+        "What is a linked list?",
+        "What is a stack?",
+        "What is a queue?",
+        "What is a tree?",
+        "What is a graph?",
+        "What is a hash table?",
+        "What is a heap?",
+        "What is a trie?",
+        "What is a priority queue?",
+        "What is a disjoint set?",
+        "What is a segment tree?",
+        "What is a fenwick tree?",
+        "What is a suffix tree?",
+        "What is a suffix array?"
+    ],
+    "answers_data_structures": [
+        "A linked list is a linear data structure where each element is a separate object with a reference to the next element in the sequence.",
+        "A stack is a linear data structure that follows the Last In First Out (LIFO) principle.",
+        "A queue is a linear data structure that follows the First In First Out (FIFO) principle.",
+        "A tree is a non-linear data structure that consists of nodes connected by edges.",
+        "A graph is a non-linear data structure that consists of nodes connected by edges.",
+        "A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values.",
+        "A heap is a specialized tree-based data structure that satisfies the heap property.",
+        "A trie is a tree-like data structure that is used to store a dynamic set of strings.",
+        "A priority queue is an abstract data type that is like a regular queue or stack data structure, but where additionally each element has a priority associated with it.",
+        "A disjoint set is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets.",
+        "A segment tree is a tree data structure for storing intervals, or segments.",
+        "A Fenwick tree is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers.",
+        "A suffix tree is a compressed trie containing all the suffixes of the given text as their keys and positions in the text as their values.",
+        "A suffix array is a sorted array of all suffixes of a given string."
+    ]
+}
