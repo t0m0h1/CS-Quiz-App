@@ -5,8 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Computer Science Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .choose_quiz, .start_quiz, .results, .quiz_container {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .select_topic select, .start_quiz button, .results button, .select_answer button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .select_answer button {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .select_answer button:hover {
+            background-color: #0056b3;
+        }
+        .progress_bar_container {
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress_bar {
+            height: 20px;
+            background-color: #76c7c0;
+            width: 0;
+        }
+    </style>
 </head>
 <body>
+
+    <header>
+        <h1>Computer Science Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <!-- Will add more soon -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="choose_quiz">
+        <div class="select_topic">
+            <select name="" id="">
+                <option value="" disabled selected>Select a topic</option>
+                <!-- Add options here -->
+            </select>
+        </div>
+    </div>
+
+    <div class="start_quiz">
+        <button id="start_quiz">Start Quiz</button>
+    </div>
+
+    <div class="results">
+        <button id="see_results">Results</button>
+        <button id="restart_quiz">Restart Quiz</button>
+    </div>
+
+    <div class="quiz_container">
+        <div class="progress_bar_container">
+            <div class="progress_bar" id="progress_bar"></div>
+        </div>
+    
+        <div class="question">
+            <!-- question will be displayed here -->
+            <div class="select_answer">
+                <button class="answer_option">Answer 1</button>
+                <button class="answer_option">Answer 2</button>
+                <button class="answer_option">Answer 3</button>
+                <button class="answer_option">Answer 4</button>
+            </div>
+        </div>
+    </div>
     
 <script src="quiz.js"></script>
 </body>
