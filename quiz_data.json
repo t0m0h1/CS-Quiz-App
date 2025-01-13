@@ -1,15 +1,25 @@
 {
     "html": [
-      {
-        "question": "What does HTML stand for?",
-        "options": ["HyperText Markup Language", "Hyper Tool Markup Language", "HyperText Managing Language"],
-        "correct": 0
-      },
-      {
-        "question": "What does the <br> tag do?",
-        "options": ["Breaks the line", "Bold text", "Creates a link"],
-        "correct": 0
-      }
+        {
+            "question": "What does HTML stand for?",
+            "options": ["HyperText Markup Language", "Hyper Tool Markup Language", "HyperText Managing Language"],
+            "correct": 0
+        },
+        {
+            "question": "What does the <br> tag do?",
+            "options": ["Breaks the line", "Bold text", "Creates a link"],
+            "correct": 0
+        },
+        {
+            "question": "Which tag is used to define an unordered list in HTML?",
+            "options": ["<ul>", "<ol>", "<li>"],
+            "correct": 0
+        },
+        {
+            "question": "What is the correct way to add an image in HTML?",
+            "options": ["<img src='image.jpg'>", "<image src='image.jpg'>", "<img href='image.jpg'>"],
+            "correct": 0
+        }
     ],
     "css": [
       {
