@@ -1,12 +1,12 @@
 // quiz.js
 
-let quizData = {};  // To store quiz data from JSON
+let quizData = {};  
 let currentQuestionIndex = 0;
 let selectedTopic = "";
 let score = 0;
 let totalQuestions = 0;
 
-// Fetch the quiz data from the JSON file
+// Fetch quiz data
 fetch('quiz_data.json')
   .then(response => response.json())
   .then(data => {
@@ -14,9 +14,10 @@ fetch('quiz_data.json')
   })
   .catch(error => {
     console.error("Error loading quiz data:", error);
+    alert("Failed to load quiz data. Please try again later.");
   });
 
-// Function to start the quiz
+// Start quiz
 document.getElementById("start_quiz").addEventListener("click", startQuiz);
 
 function startQuiz() {
@@ -35,20 +36,25 @@ function startQuiz() {
   }
 }
 
-// Function to show a question
+// Show question
 function showQuestion() {
   const currentQuestion = quizData[selectedTopic][currentQuestionIndex];
-  document.querySelector(".question").innerHTML = `
-    <p>${currentQuestion.question}</p>
-    <div class="select_answer">
-      ${currentQuestion.options.map((option, index) => `
-        <button onclick="checkAnswer(${index})">${option}</button>
-      `).join('')}
-    </div>
-  `;
+  const questionElement = document.querySelector(".question");
+  questionElement.innerHTML = `<p>${currentQuestion.question}</p>`;
+
+  const answers = currentQuestion.options.map((option, index) => {
+    const button = document.createElement("button");
+    button.textContent = option;
+    button.onclick = () => checkAnswer(index);
+    return button;
+  });
+
+  const answerContainer = document.querySelector(".select_answer");
+  answerContainer.innerHTML = ''; // Clear previous answers
+  answers.forEach(button => answerContainer.appendChild(button));
 }
 
-// Function to check the selected answer
+// Check answer
 function checkAnswer(selectedIndex) {
   const correctIndex = quizData[selectedTopic][currentQuestionIndex].correct;
   if (selectedIndex === correctIndex) {
@@ -64,35 +70,33 @@ function checkAnswer(selectedIndex) {
   }
 }
 
-// Function to update progress bar
+// Update progress bar
 function updateProgressBar() {
   const progressBar = document.getElementById("progress_bar");
   const progress = (currentQuestionIndex / totalQuestions) * 100;
-  progressBar.style.width = progress + "%";
+  progressBar.style.width = `${progress}%`;
 }
 
-// Function to show results
+// Show results
 function showResults() {
-    document.querySelector(".quiz_container").style.display = "none";
-    document.querySelector(".results").style.display = "block";
-    const percentage = (score / totalQuestions) * 100;
-    alert(`You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`);
-    quizFinished = progress === 100;
-    if (!quizFinished) {
-        alert("Quiz is not finished yet");
-    }
+  document.querySelector(".quiz_container").style.display = "none";
+  document.querySelector(".results").style.display = "block";
+  const percentage = (score / totalQuestions) * 100;
+  alert(`You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`);
 }
 
-// Restart the quiz
+// Restart quiz
 document.getElementById("restart_quiz").addEventListener("click", restartQuiz);
 
 function restartQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
   document.querySelector(".results").style.display = "none";
   document.querySelector(".choose_quiz").style.display = "block";
   document.querySelector(".start_quiz").style.display = "block";
 }
 
-// Show results
+// Show score
 document.getElementById("see_results").addEventListener("click", () => {
   alert(`Your score: ${score} out of ${totalQuestions}`);
 });
