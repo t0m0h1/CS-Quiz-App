@@ -3,12 +3,14 @@
         "question": "What does HTML stand for?",
         "options": ["HyperText Markup Language", "HyperText Markdown Language", "HighText Machine Language", "None of the above"],
         "answer": 0,
-        "type": "multiple-choice"
+        "type": "multiple-choice",
+        "topic": "HTML"
     },
     {
         "question": "JavaScript is a programming language.",
         "options": ["True", "False"],
         "answer": 0,
-        "type": "true/false"
+        "type": "true/false",
+        "topic": "JavaScript"
     }
 ]
