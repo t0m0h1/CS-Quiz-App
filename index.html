@@ -7,64 +7,144 @@
     <title>Computer Science Quiz Application</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center;
+            margin-top: 10px;
         }
+
         nav ul li {
-            display: inline;
-            margin: 0 10px;
+            display: inline-block;
+            margin: 0 15px;
         }
+
         nav ul li a {
-            color: #fff;
+            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        .choose_quiz, .start_quiz, .results, .quiz_container {
-            margin: 20px auto;
-            max-width: 600px;
+
+        nav ul li a:hover {
+            color: #76c7c0;
+        }
+
+        main {
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            text-align: center;
         }
-        .select_topic select, .start_quiz button, .results button, .select_answer button {
+
+        .choose_quiz, .start_quiz, .results, .quiz_container {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .choose_quiz select, .start_quiz button, .results button, .select_answer button {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1.1em;
             cursor: pointer;
+            transition: 0.3s;
         }
-        .select_answer button {
-            background-color: #007bff;
-            color: #fff;
+
+        .choose_quiz select:hover, .start_quiz button:hover, .results button:hover, .select_answer button:hover {
+            background-color: #76c7c0;
+            color: white;
+            border-color: #76c7c0;
         }
-        .select_answer button:hover {
-            background-color: #0056b3;
-        }
+
         .progress_bar_container {
             background-color: #e0e0e0;
             border-radius: 4px;
             overflow: hidden;
+            margin-top: 20px;
+            height: 25px;
+            width: 100%;
         }
+
         .progress_bar {
-            height: 20px;
-            background-color: #76c7c0;
+            height: 100%;
             width: 0;
+            background-color: #76c7c0;
+            transition: width 0.5s ease;
+        }
+
+        .quiz_container {
+            text-align: left;
+        }
+
+        .question {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .select_answer {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .select_answer button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            padding: 15px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .select_answer button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            .choose_quiz, .start_quiz, .results, .quiz_container {
+                padding: 20px;
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -74,49 +154,57 @@
         <h1>Computer Science Quiz</h1>
         <nav>
             <ul>
-                <li><a href="#index.html">Home</a></li>
-                <li><a href="#about.html">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <!-- add more soon -->
             </ul>
         </nav>
     </header>
 
-    <div class="choose_quiz">
-        <div class="select_topic">
-            <select name="" id="">
-                <option value="" disabled selected>Select a topic:</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScript</option>
-                <option value="data-structures">Data-Structures</option>
-                <option value="algorithms">Algorithms</option>
-                <option value="data-science">Data Science</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="start_quiz">
-        <button id="start_quiz">Start Quiz</button>
-    </div>
-
-    <div class="results">
-        <button id="see_results">Results</button>
-        <button id="restart_quiz">Restart Quiz</button>
-    </div>
-
-    <div class="quiz_container">
-        <div class="progress_bar_container">
-            <div class="progress_bar" id="progress_bar"></div>
-        </div>
-    
-        <div class="question">
-            <!-- question will be displayed here -->
-            <div class="select_answer">
-                <!-- Answer buttons will appear here -->
+    <main>
+        <section class="choose_quiz">
+            <h2>Select a Topic</h2>
+            <div class="select_topic">
+                <select name="quiz_topic" id="quiz_topic">
+                    <option value="" disabled selected>Select a topic:</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="data-structures">Data Structures</option>
+                    <option value="algorithms">Algorithms</option>
+                    <option value="data-science">Data Science</option>
+                </select>
             </div>
-        </div>
-    </div>
-    
-<script src="quiz.js"></script>
+        </section>
+
+        <section class="start_quiz">
+            <button id="start_quiz">Start Quiz</button>
+        </section>
+
+        <section class="results">
+            <button id="see_results">See Results</button>
+            <button id="restart_quiz">Restart Quiz</button>
+        </section>
+
+        <section class="quiz_container">
+            <div class="progress_bar_container">
+                <div class="progress_bar" id="progress_bar"></div>
+            </div>
+        
+            <div class="question">
+                <!-- question will be dynamically displayed here -->
+            </div>
+
+            <div class="select_answer">
+                <!-- Answer buttons will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Computer Science Quiz. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
 </body>
 </html>
