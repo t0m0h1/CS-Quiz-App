@@ -7,10 +7,234 @@
         "topic": "HTML"
     },
     {
-        "question": "JavaScript is a programming language.",
+        "question": "HTML is used to structure content on the web.",
         "options": ["True", "False"],
         "answer": 0,
         "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "Which HTML tag is used to define an unordered list?",
+        "options": ["<ol>", "<ul>", "<list>", "<u>"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "The <title> element defines the document's title in the browser's title bar.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": ["<br>", "<break>", "<lb>", "<line-break>"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "HTML comments are visible on the webpage.",
+        "options": ["True", "False"],
+        "answer": 1,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "Which attribute is used to specify an image's alternate text?",
+        "options": ["src", "alt", "title", "href"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "The <table> tag is used to create a table in HTML.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "What is the correct syntax for creating a hyperlink in HTML?",
+        "options": ["<a href='url'>Link</a>", "<link='url'>Link</link>", "<href='url'>Link</href>", "<url='url'>Link</url>"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "Inline elements can contain block-level elements.",
+        "options": ["True", "False"],
+        "answer": 1,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "Which HTML element is used for the largest heading?",
+        "options": ["<h1>", "<h6>", "<heading>", "<head>"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "HTML5 introduced the <article> element.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "What does the <meta> tag provide in HTML?",
+        "options": ["Additional metadata", "Styling rules", "Scripts for the page", "Hyperlinks"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "HTML5 does not support the <marquee> tag.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "Which attribute specifies the input type in a form?",
+        "options": ["name", "type", "value", "placeholder"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "HTML is case-sensitive.",
+        "options": ["True", "False"],
+        "answer": 1,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "What is the correct HTML for creating a text input field?",
+        "options": ["<input type='text'>", "<input text='text'>", "<text-input>", "<textfield>"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "HTML5 introduced the <audio> and <video> elements.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "Which HTML element is used to embed JavaScript code?",
+        "options": ["<js>", "<script>", "<javascript>", "<code>"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "HTML"
+    },
+    {
+        "question": "The <footer> tag defines content placed at the bottom of the page.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "HTML"
+    },
+    {
+        "question": "JavaScript is case-sensitive.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof null);",
+        "options": ["null", "object", "undefined", "string"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "JavaScript is the same as Java.",
+        "options": ["True", "False"],
+        "answer": 1,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Which symbol is used for comments in JavaScript?",
+        "options": ["//", "#", "/* */", "<!-- -->"],
+        "answer": 0,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "What will be the output of the following code?\n\nconsole.log('5' + 3);",
+        "options": ["8", "53", "Error", "undefined"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "JavaScript arrays can hold different data types.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["var", "let", "const", "All of the above"],
+        "answer": 3,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "The 'this' keyword refers to the current object in JavaScript.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Which method converts a JSON string into a JavaScript object?",
+        "options": ["JSON.stringify()", "JSON.parse()", "JSON.toObject()", "JSON.decode()"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Functions in JavaScript can be assigned to variables.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Which function is used to print something to the console?",
+        "options": ["print()", "log()", "console.log()", "output()"],
+        "answer": 2,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "JavaScript supports object-oriented programming.",
+        "options": ["True", "False"],
+        "answer": 0,
+        "type": "true/false",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "Which operator is used to compare both value and type in JavaScript?",
+        "options": ["==", "===", "!=", "<>"],
+        "answer": 1,
+        "type": "multiple-choice",
+        "topic": "JavaScript"
+    },
+    {
+        "question": "What is the purpose of the Array.prototype.map() method?",
+        "options": ["To filter elements", "To create a new array by transforming elements", "To iterate over an array", "To sort elements"],
+        "answer": 1,
+        "type": "multiple-choice",
         "topic": "JavaScript"
     }
 ]
