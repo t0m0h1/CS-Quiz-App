@@ -1,25 +1,105 @@
 {
     "html": [
-        {
-            "question": "What does HTML stand for?",
-            "options": ["HyperText Markup Language", "Hyper Tool Markup Language", "HyperText Managing Language"],
-            "correct": 0
-        },
-        {
-            "question": "What does the <br> tag do?",
-            "options": ["Breaks the line", "Bold text", "Creates a link"],
-            "correct": 0
-        },
-        {
-            "question": "Which tag is used to define an unordered list in HTML?",
-            "options": ["'<ul>'", "'<ol>'", "'<li>'"],
-            "correct": 0
-        },
-        {
-            "question": "What is the correct way to add an image in HTML?",
-            "options": ["<img src='image.jpg'>", "<image src='image.jpg'>", "<img href='image.jpg'>"],
-            "correct": 0
-        }
+      {
+        "question": "What does HTML stand for?",
+        "options": ["HyperText Markup Language", "Hyper Tool Markup Language", "HyperText Managing Language"],
+        "correct": 0
+      },
+      {
+        "question": "The <br> tag is used to create a line break in HTML.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is a block-level element in HTML?",
+        "options": ["<div>", "<span>", "<a>"],
+        "correct": 0
+      },
+      {
+        "question": "The <head> tag contains the metadata of the document.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used for inserting an image?",
+        "options": ["<img>", "<image>", "<picture>"],
+        "correct": 0
+      },
+      {
+        "question": "Which attribute is used to specify the URL of an image in HTML?",
+        "options": ["src", "href", "alt"],
+        "correct": 0
+      },
+      {
+        "question": "The <title> tag appears in the body of the webpage.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "question": "Which tag is used to define an unordered list in HTML?",
+        "options": ["<ul>", "<ol>", "<list>"],
+        "correct": 0
+      },
+      {
+        "question": "Which tag is used to define a table in HTML?",
+        "options": ["<table>", "<tr>", "<td>"],
+        "correct": 0
+      },
+      {
+        "question": "Which attribute is used to set the background color of an HTML element?",
+        "options": ["bgcolor", "background", "color"],
+        "correct": 0
+      },
+      {
+        "question": "HTML documents are usually saved with the .html extension.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "What is the default value of the display property in CSS?",
+        "options": ["inline", "block", "none"],
+        "correct": 0
+      },
+      {
+        "question": "Which tag is used to create a hyperlink in HTML?",
+        "options": ["<link>", "<a>", "<href>"],
+        "correct": 1
+      },
+      {
+        "question": "The <body> tag in HTML defines the structure of a webpage.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following tags is used to define a form in HTML?",
+        "options": ["<form>", "<input>", "<button>"],
+        "correct": 0
+      },
+      {
+        "question": "Which attribute is used to specify the target of a hyperlink?",
+        "options": ["target", "href", "link"],
+        "correct": 0
+      },
+      {
+        "question": "The <meta> tag is used to specify metadata like the character encoding.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following tags is used for a line break in HTML?",
+        "options": ["<br>", "<hr>", "<div>"],
+        "correct": 0
+      },
+      {
+        "question": "The <footer> tag is used to define the footer of an HTML document.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is used to create a dropdown list in HTML?",
+        "options": ["<select>", "<input>", "<dropdown>"],
+        "correct": 0
+      }
     ],
     "css": [
       {
@@ -28,9 +108,94 @@
         "correct": 2
       },
       {
-        "question": "How do you add a comment in CSS?",
-        "options": ["// comment", "/* comment */", "<!-- comment -->"],
+        "question": "In CSS, the color property is used to change the text color.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to set the font size in CSS?",
+        "options": ["font-size", "font", "text-size"],
+        "correct": 0
+      },
+      {
+        "question": "The padding property in CSS is used to add space between the element's content and its border.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to add space between elements in CSS?",
+        "options": ["margin", "padding", "border-spacing"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the text alignment in CSS?",
+        "options": ["text-align", "align", "justify-content"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to set the border style in CSS?",
+        "options": ["border-style", "border", "border-width"],
+        "correct": 0
+      },
+      {
+        "question": "CSS stands for Cascading Style Sheet.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which CSS property is used to control the font family?",
+        "options": ["font-family", "text-font", "font-style"],
+        "correct": 0
+      },
+      {
+        "question": "In CSS, 'display: none;' makes an element visible.",
+        "options": ["True", "False"],
         "correct": 1
+      },
+      {
+        "question": "Which property is used to set the width of an element in CSS?",
+        "options": ["width", "size", "height"],
+        "correct": 0
+      },
+      {
+        "question": "Which CSS selector is used to target all elements with a specific class?",
+        "options": [".class", "#id", "element"],
+        "correct": 0
+      },
+      {
+        "question": "The 'position' property in CSS can be used to position elements relative to their normal position.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which property in CSS is used to change the font weight?",
+        "options": ["font-weight", "font-style", "font-size"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is used to change the color of links in CSS?",
+        "options": ["link-color", "color", "a:hover"],
+        "correct": 1
+      },
+      {
+        "question": "Which property in CSS is used to create rounded corners?",
+        "options": ["border-radius", "border", "border-width"],
+        "correct": 0
+      },
+      {
+        "question": "The 'float' property in CSS is used to move elements to the left or right of their container.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which CSS property is used to set the line height?",
+        "options": ["line-height", "height", "font-size"],
+        "correct": 0
+      },
+      {
+        "question": "In CSS, 'z-index' determines the stacking order of elements.",
+        "options": ["True", "False"],
+        "correct": 0
       }
     ],
     "javascript": [
@@ -40,9 +205,89 @@
         "correct": 0
       },
       {
-        "question": "What does 'console.log' do in JavaScript?",
-        "options": ["Displays an alert", "Logs a message to the console", "Changes the webpage content"],
-        "correct": 1
+        "question": "In JavaScript, '===' is used to compare both value and type.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is used to declare a function in JavaScript?",
+        "options": ["function myFunction()", "function = myFunction()", "def myFunction()"],
+        "correct": 0
+      },
+      {
+        "question": "In JavaScript, 'null' is considered a type of object.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which method is used to add an element to the end of an array in JavaScript?",
+        "options": ["push()", "add()", "append()"],
+        "correct": 0
+      },
+      {
+        "question": "JavaScript is a case-sensitive programming language.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which event is triggered when a user clicks a button in JavaScript?",
+        "options": ["click", "onmouseover", "keydown"],
+        "correct": 0
+      },
+      {
+        "question": "In JavaScript, arrays are zero-indexed.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which method is used to parse a string to an integer in JavaScript?",
+        "options": ["parseInt()", "toInt()", "int()"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following methods is used to remove the last element from an array in JavaScript?",
+        "options": ["pop()", "shift()", "delete()"],
+        "correct": 0
+      },
+      {
+        "question": "JavaScript has block-scoped variables with the 'let' keyword.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which method is used to select an element by its id in JavaScript?",
+        "options": ["getElementById()", "querySelector()", "getElementByClass()"],
+        "correct": 0
+      },
+      {
+        "question": "JavaScript's 'typeof' operator returns the type of a variable as a string.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which method is used to create a new array from an existing array in JavaScript?",
+        "options": ["map()", "slice()", "splice()"],
+        "correct": 0
+      },
+      {
+        "question": "Which keyword is used to define a constant variable in JavaScript?",
+        "options": ["const", "let", "final"],
+        "correct": 0
+      },
+      {
+        "question": "Which of the following is used to handle errors in JavaScript?",
+        "options": ["try...catch", "throw...catch", "error...catch"],
+        "correct": 0
+      },
+      {
+        "question": "In JavaScript, NaN stands for 'Not a Number'.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "question": "Which method is used to convert a JavaScript object into a JSON string?",
+        "options": ["JSON.stringify()", "toJSON()", "convertJSON()"],
+        "correct": 0
       }
     ]
   }
