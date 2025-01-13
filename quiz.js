@@ -73,10 +73,14 @@ function updateProgressBar() {
 
 // Function to show results
 function showResults() {
-  document.querySelector(".quiz_container").style.display = "none";
-  document.querySelector(".results").style.display = "block";
-  const percentage = (score / totalQuestions) * 100;
-  alert(`You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`);
+    document.querySelector(".quiz_container").style.display = "none";
+    document.querySelector(".results").style.display = "block";
+    const percentage = (score / totalQuestions) * 100;
+    alert(`You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`);
+    quizFinished = progressBar.style.width = "100%";
+    if (!quizFinished) {
+        alert("Quiz is not finished yet");
+    }
 }
 
 // Restart the quiz
