@@ -17,7 +17,7 @@ startQuizButton.addEventListener("click", loadQuestions);
 
 // Load Questions from JSON
 function loadQuestions() {
-    fetch('questions.json') // Path to your JSON file
+    fetch('quiz_data.json') // Path to your JSON file
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch questions.');
